@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <h1>Order products_list</h1>
+        <th>
+            <td>Title</td>
+            <td>Number</td>
+            <td>Price</td>
+            <td>Payment</td>
+        </th>
+        {% for shipment in shipments %}
+        <tr>
+            <td>{{shipment.order}}</td>
+            <td>{{shipment.location}}</td>
+            <td>{{shipment.type_of_delivery}}</td>
+            <td>{{shipment.shipment_cost}}</td>
+            <td>{{shipment.status}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>

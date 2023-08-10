@@ -3,6 +3,7 @@ from payment.models import Payment_management
 from inventory.models import Product
 from customer.models import Buyer
 from cart.models import Basket
+
 class Place_order(models.Model):
 
     payment = models.OneToOneField(Payment_management, on_delete=models.CASCADE, null=True)
